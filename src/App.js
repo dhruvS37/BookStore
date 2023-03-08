@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Counter from './components/Counter';
 import About from './pages/About';
 import List from './components/List';
+import LoginForm from './components/LoginForm';
 
 class App extends React.Component {
   
@@ -46,14 +47,16 @@ class App extends React.Component {
         
         <About title="About Section" description="this is About section"/> */}
 
-        <br/>
+        {/* <br/>
         <button onClick={this.changeToHome}>Home</button>
         &emsp;
         <button onClick={this.changeToAbout}>About</button>
-        {page}
+        {page} */}
 
 
         {/* <List/> */}
+
+        <LoginForm/>
         
       </div>
     );

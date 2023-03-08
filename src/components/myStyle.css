@@ -1,3 +1,4 @@
+/* title.js */
 .title{
     color: rgb(126, 33, 213);
     font-size:40px;
@@ -5,4 +6,18 @@
 }
 .para{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Loginform.js */
+.formFeild{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+.inputCss {
+    padding: 3px 10px;
+    font-size: 18px;
+    margin: 0px 26px;
 }
