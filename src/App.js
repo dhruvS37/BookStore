@@ -11,6 +11,8 @@ import LifeCycleA from './components/LifeCycleA';
 import FocusInput from './components/FocusInput';
 import UserList from './components/UserList';
 import RenderPropComponents from './components/RenderPropComponents';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 class App extends React.Component {
   
@@ -71,10 +73,14 @@ class App extends React.Component {
 
         {/* <Home/> */}
 
-        <RenderPropComponents render={()=>(
+        {/* <RenderPropComponents render={()=>(
             <h3>I am coming from render props</h3>
-        )}/>
-        
+        )}/> */}
+
+        <UserProvider value='Dhruv Sanghani'>
+          <ComponentC/>
+        </UserProvider>
+
       </div>
     );
   }
