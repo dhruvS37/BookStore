@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Title from "../components/Title";
+import HOC from "../components/HOC";
+import UserList from "../components/UserList";
 
 class Home extends Component{
-
+    
     constructor(props){
         super()
 
@@ -13,18 +15,23 @@ class Home extends Component{
     }
     render(){
 
-        const {title,description}= this.state
-        return(
-            <>
-                {/* <Title/>
-                <Title/>
-                <Title/> */}
+        const userData = [{id : 115, name:"Umang"},{id : 58, name:"Sajan"},{id : 80, name:"Dhruv"}]
+        const Users = HOC(UserList,userData)
 
-                {/* <Title title="Dhruv" description="Good Morning"/> */}
+        return(<Users/>)
+        
+        // const {title,description}= this.state
+        // return(
+        //     <>
+        //         {/* <Title/>
+        //         <Title/>
+        //         <Title/> */}
 
-                <Title title={title} description={description }/>
-            </>
-        );
+        //         {/* <Title title="Dhruv" description="Good Morning"/> */}
+
+        //         <Title title={title} description={description }/>
+        //     </>
+        // );
         
     }
 }

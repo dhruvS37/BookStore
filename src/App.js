@@ -9,6 +9,8 @@ import List from './components/List';
 import LoginForm from './components/LoginForm';
 import LifeCycleA from './components/LifeCycleA';
 import FocusInput from './components/FocusInput';
+import UserList from './components/UserList';
+import RenderPropComponents from './components/RenderPropComponents';
 
 class App extends React.Component {
   
@@ -44,6 +46,7 @@ class App extends React.Component {
       }
     return (
       <div className="App">
+        
 
         {/* <Home title="Home" description="this is Home page"/> 
 
@@ -64,7 +67,13 @@ class App extends React.Component {
 
         {/* <LifeCycleA/> */}
 
-        <FocusInput/>
+        {/* <FocusInput/> */}
+
+        {/* <Home/> */}
+
+        <RenderPropComponents render={()=>(
+            <h3>I am coming from render props</h3>
+        )}/>
         
       </div>
     );
