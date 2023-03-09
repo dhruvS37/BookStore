@@ -7,6 +7,8 @@ import Counter from './components/Counter';
 import About from './pages/About';
 import List from './components/List';
 import LoginForm from './components/LoginForm';
+import LifeCycleA from './components/LifeCycleA';
+import FocusInput from './components/FocusInput';
 
 class App extends React.Component {
   
@@ -31,6 +33,8 @@ class App extends React.Component {
       ishome:false
     })
   }
+  
+
   render(){
     let page
       if (this.state.ishome) {
@@ -56,7 +60,11 @@ class App extends React.Component {
 
         {/* <List/> */}
 
-        <LoginForm/>
+        {/* <LoginForm/> */}
+
+        {/* <LifeCycleA/> */}
+
+        <FocusInput/>
         
       </div>
     );
