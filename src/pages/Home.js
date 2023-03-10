@@ -15,23 +15,23 @@ class Home extends Component{
     }
     render(){
 
-        const userData = [{id : 115, name:"Umang"},{id : 58, name:"Sajan"},{id : 80, name:"Dhruv"}]
-        const Users = HOC(UserList,userData)
+        // const userData = [{id : 115, name:"Umang"},{id : 58, name:"Sajan"},{id : 80, name:"Dhruv"}]
+        // const Users = HOC(UserList,userData)
 
-        return(<Users/>)
+        // return(<Users/>)
         
-        // const {title,description}= this.state
-        // return(
-        //     <>
-        //         {/* <Title/>
-        //         <Title/>
-        //         <Title/> */}
+        const {title,description}= this.state
+        return(
+            <>
+                {/* <Title/>
+                <Title/>
+                <Title/> */}
 
-        //         {/* <Title title="Dhruv" description="Good Morning"/> */}
+                {/* <Title title="Dhruv" description="Good Morning"/> */}
 
-        //         <Title title={title} description={description }/>
-        //     </>
-        // );
+                <Title title={title} description={description }/>
+            </>
+        );
         
     }
 }

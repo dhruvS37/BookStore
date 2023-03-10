@@ -13,6 +13,7 @@ import UserList from './components/UserList';
 import RenderPropComponents from './components/RenderPropComponents';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import Users from './components/Users';
 
 class App extends React.Component {
   
@@ -49,7 +50,7 @@ class App extends React.Component {
     return (
       <div className="App">
         
-
+        
         {/* <Home title="Home" description="this is Home page"/> 
 
         <Counter/>
@@ -57,9 +58,9 @@ class App extends React.Component {
         <About title="About Section" description="this is About section"/> */}
 
         {/* <br/>
-        <button onClick={this.changeToHome}>Home</button>
+        <button style={{background:'green',color:'white',padding:'10px'}} onClick={this.changeToHome}>Home</button>
         &emsp;
-        <button onClick={this.changeToAbout}>About</button>
+        <button style={{background:'green',color:'white',padding:'10px'}} onClick={this.changeToAbout}>About</button>
         {page} */}
 
 
@@ -77,10 +78,10 @@ class App extends React.Component {
             <h3>I am coming from render props</h3>
         )}/> */}
 
-        <UserProvider value='Dhruv Sanghani'>
+        {/* <UserProvider value='Dhruv Sanghani'>
           <ComponentC/>
-        </UserProvider>
-
+        </UserProvider> */}
+        <Users/>
       </div>
     );
   }
