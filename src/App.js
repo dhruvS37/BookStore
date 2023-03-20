@@ -14,6 +14,10 @@ import RenderPropComponents from './components/RenderPropComponents';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import Users from './components/Users';
+import Post from './components/Post';
+import CounterHook from './components/CounterHook';
+import HookCounter2 from '1tutorial/HookCounter2';
+import HookStateObject from '1tutorial/HookStateObject';
 
 class App extends React.Component {
   
@@ -81,7 +85,15 @@ class App extends React.Component {
         {/* <UserProvider value='Dhruv Sanghani'>
           <ComponentC/>
         </UserProvider> */}
-        <Users/>
+
+        {/* <Users/> */}
+        {/* <Post/> */}
+
+        <CounterHook/>
+
+        <LoginForm/>
+
+        {/* <HookStateObject/> */}
       </div>
     );
   }

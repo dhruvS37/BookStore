@@ -4,7 +4,6 @@ class Counter extends React.Component{
 
     constructor(){
         super()
-
         this.state = {
             count : 0
         }
@@ -12,6 +11,12 @@ class Counter extends React.Component{
         this.clickHandler=this.clickHandler.bind(this)  /* Method - 1 */
     }
 
+    componentDidMount(){
+        document.title=`Clicked ${this.state.count} times`
+    }
+    componentDidUpdate(preProps,preState){
+        document.title=`Clicked ${this.state.count} times`
+    }
     /* Method - 2 */
 
     // clickHandler = () => {
