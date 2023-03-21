@@ -16,8 +16,7 @@ import { UserProvider } from './components/userContext';
 import Users from './components/Users';
 import Post from './components/Post';
 import CounterHook from './components/CounterHook';
-import HookCounter2 from '1tutorial/HookCounter2';
-import HookStateObject from '1tutorial/HookStateObject';
+import HookCounter2 from './Tutorial/HookCounter2'
 
 class App extends React.Component {
   
@@ -89,9 +88,9 @@ class App extends React.Component {
         {/* <Users/> */}
         {/* <Post/> */}
 
-        <CounterHook/>
+        {/* <CounterHook/> */}
 
-        <LoginForm/>
+        {/* <LoginForm/> */}
 
         {/* <HookStateObject/> */}
       </div>
