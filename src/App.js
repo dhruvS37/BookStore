@@ -17,6 +17,9 @@ import Users from './components/Users';
 import Post from './components/Post';
 import CounterHook from './components/CounterHook';
 import HookCounter2 from './Tutorial/HookCounter2'
+import HookMouse from './Tutorial/HookMouse';
+import MouseContainer from './Tutorial/MouseContainer';
+import PostDetail from './components/PostDetail';
 
 class App extends React.Component {
   
@@ -93,6 +96,10 @@ class App extends React.Component {
         {/* <LoginForm/> */}
 
         {/* <HookStateObject/> */}
+        {/* <HookMouse/> */}
+        {/* <MouseContainer/> */}
+        
+        <PostDetail/>
       </div>
     );
   }
