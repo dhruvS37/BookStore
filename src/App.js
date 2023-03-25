@@ -20,6 +20,8 @@ import HookCounter2 from './Tutorial/HookCounter2'
 import HookMouse from './Tutorial/HookMouse';
 import MouseContainer from './Tutorial/MouseContainer';
 import PostDetail from './components/PostDetail';
+import CounterReducer from './components/CounterReducer';
+import CountyerReducerObject from './components/CountyerReducerObject';
 
 class App extends React.Component {
   
@@ -88,7 +90,7 @@ class App extends React.Component {
           <ComponentC/>
         </UserProvider> */}
 
-        {/* <Users/> */}
+        <Users/>
         {/* <Post/> */}
 
         {/* <CounterHook/> */}
@@ -99,7 +101,10 @@ class App extends React.Component {
         {/* <HookMouse/> */}
         {/* <MouseContainer/> */}
         
-        <PostDetail/>
+        {/* <PostDetail/> */}
+
+        {/* <CounterReducer/> */}
+        {/* <CountyerReducerObject/> */}
       </div>
     );
   }

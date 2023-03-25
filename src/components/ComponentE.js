@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, useContext } from 'react'
 import { UserConsumer } from './userContext'
 
 class ComponentE extends Component {
+    
   render() {
     return (
         <UserConsumer>
@@ -13,7 +14,6 @@ class ComponentE extends Component {
                 }
             }
         </UserConsumer>
-      
     )
   }
 }

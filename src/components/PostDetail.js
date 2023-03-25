@@ -1,7 +1,9 @@
 import React, { useState,useEffect } from 'react'
 import axios from 'axios'
 
+let r=0
 function PostDetail() {
+    r++
     const [id ,setID] = useState(1)
     const[post,setPost] = useState({})
 
@@ -19,7 +21,7 @@ function PostDetail() {
   return (
     <div>
         <input type="number" value={id} onChange={(e)=>{setID(e.target.value)}}></input>
-        <div>{post.title}</div>
+        <div>{post.title}  </div>
     </div>
   )
 }
