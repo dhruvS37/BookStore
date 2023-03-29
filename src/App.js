@@ -22,6 +22,7 @@ import MouseContainer from './Tutorial/MouseContainer';
 import PostDetail from './components/PostDetail';
 import CounterReducer from './components/CounterReducer';
 import CountyerReducerObject from './components/CountyerReducerObject';
+import RegisterUser from './components/RegisterUser';
 
 class App extends React.Component {
   
@@ -90,7 +91,7 @@ class App extends React.Component {
           <ComponentC/>
         </UserProvider> */}
 
-        <Users/>
+        {/* <Users/> */}
         {/* <Post/> */}
 
         {/* <CounterHook/> */}
@@ -105,6 +106,8 @@ class App extends React.Component {
 
         {/* <CounterReducer/> */}
         {/* <CountyerReducerObject/> */}
+
+        <RegisterUser/>
       </div>
     );
   }
