@@ -23,6 +23,8 @@ import PostDetail from './components/PostDetail';
 import CounterReducer from './components/CounterReducer';
 import CountyerReducerObject from './components/CountyerReducerObject';
 import RegisterUser from './components/RegisterUser';
+import InputRef from './components/InputRef';
+import RenderUsestate from './components/RenderUsestate';
 
 class App extends React.Component {
   
@@ -104,10 +106,12 @@ class App extends React.Component {
         
         {/* <PostDetail/> */}
 
-        {/* <CounterReducer/> */}
+        <CounterReducer/>
         {/* <CountyerReducerObject/> */}
 
-        <RegisterUser/>
+        {/* <RegisterUser/> */}
+        {/* <InputRef /> */}
+        {/* <RenderUsestate/> */}
       </div>
     );
   }
