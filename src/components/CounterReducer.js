@@ -40,8 +40,8 @@ export const countContex = React.createContext()
 
 // export default CounterReducer
 
-// Day 21
 
+// Day 21
 
 function CounterReducer() {
 
@@ -59,6 +59,7 @@ function CounterReducer() {
     const [op,dispatch] = useReducer(reduce,iniState)
     
     useEffect(()=>{
+        
         console.log("useReducer render");
     },[])
   return (
